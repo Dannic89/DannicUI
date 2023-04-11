@@ -1,0 +1,18 @@
+## Title: |cffa500Dannic|r UI
+## Description: |cffa500Dannic|r'|cffa500s|r UserInterface
+## Author: |cffa500Dannic|r
+## APIVersion: 101037
+## AddOnVersion: 0.1
+## IsLibrary: False
+## DependsOn: LibAddonMenu-2.0
+## SavedVariables: DannicUIVars
+
+DannicUI.lua
+DannicUISettings.lua
+DannicUI.xml
+SavedVars.lua
+
+modules/UnitFrames/player.lua
+modules/UnitFrames/player.xml
+modules/UnitFrames/target.lua
+modules/UnitFrames/target.xml

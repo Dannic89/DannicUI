@@ -1,0 +1,91 @@
+<GuiXml> 
+   <Controls>
+      
+      <TopLevelControl name="PlayerHealthFrame" clampedToScreen="true" mouseEnabled="true" movable="true" hidden="false"> 
+         <Dimensions x="390" y="42" />
+         <Anchor point="TOPLEFT" relativeTo="GuiRoot" relativePoint="TOPLEFT" offsetX="420" offsetY="1036"/>
+         <Controls>
+            <Backdrop name="$(parent)Backdrop" edgeColor="000000" layer="0" level="0" centerColor="000000" alpha="0.6"  hidden="false">
+               <Dimensions x="100%" y="100%" />
+               <Anchor point="TOPLEFT"  relativeTo="$(parent)" relativePoint="TOPLEFT"/>
+               <Edge edgeSize="1" />
+            </Backdrop>
+            <Backdrop name="$(parent)Border" edgeColor="000000" layer="0" level="2" centerColor="00000000" alpha="1"  hidden="false">
+               <Dimensions x="100%" y="100%" />
+               <Anchor point="TOPLEFT"  relativeTo="$(parent)" relativePoint="TOPLEFT"/>
+               <Edge edgeSize="1" />
+            </Backdrop>
+            <StatusBar name="$(parent)StatusBar" textureFile="dannicui/media/textures/Glass.dds" layer="0" level="1" color="bf171d" alpha="1" hidden="false">
+               <Dimensions x="100%" y="100%" />
+               <Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="0" offsetY="0"/> 
+               <Limits min="0" max="100" />
+            </StatusBar>
+            <Texture name="$(parent)Icon" textureFile="" level="3">
+               <Dimensions x="48" y="48" />
+               <Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetX="-8" offsetY="12"/>
+            </Texture>
+            <Label name="$(parent)Label" font="ZoFontWinH1" color="ffffff" text="PlayerName" verticalAlignment="CENTER" horizontalAlignment="LEFT"  alpha="0.85">			
+               <Dimensions x="0" y="0" />
+               <Anchor point="BOTTOMLEFT"  relativeTo="$(parent)StatusBar" relativePoint="TOPLEFT" offsetX="4" offsetY="14"/>
+            </Label>
+            <Label name="$(parent)Health" font="ZoFontWinH1" color="ffffff" text="Health" verticalAlignment="CENTER" horizontalAlignment="LEFT"  alpha="0.85">			
+               <Dimensions x="0" y="0" />
+               <Anchor point="TOPRIGHT"  relativeTo="$(parent)StatusBar" relativePoint="BOTTOMRIGHT" offsetX="0" offsetY="0"/>
+            </Label>
+         </Controls>
+      </TopLevelControl>
+
+      <TopLevelControl name="PlayerMagickaFrame" clampedToScreen="true" mouseEnabled="true" movable="true" hidden="false"> 
+         <Dimensions x="312" y="8" />
+         <Anchor point="TOPLEFT" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="-313" offsetY="400"/>
+         <Controls>
+            <Backdrop name="$(parent)Backdrop" edgeColor="000000" layer="0" level="0" centerColor="000000" alpha="0.6"  hidden="false">
+               <Dimensions x="100%" y="100%" />
+               <Anchor point="TOPLEFT"  relativeTo="$(parent)" relativePoint="TOPLEFT"/>
+               <Edge edgeSize="1" />
+            </Backdrop>
+            <Backdrop name="$(parent)Border" edgeColor="000000" layer="0" level="2" centerColor="00000000" alpha="1"  hidden="false">
+               <Dimensions x="100%" y="100%" />
+               <Anchor point="TOPLEFT"  relativeTo="$(parent)" relativePoint="TOPLEFT"/>
+               <Edge edgeSize="1" />
+            </Backdrop>
+            <StatusBar name="$(parent)StatusBar" textureFile="dannicui/media/textures/Glass.dds" layer="0" level="1" color="1760bf" alpha="1" hidden="false">
+               <Dimensions x="100%" y="100%" />
+               <Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="0" offsetY="0"/> 
+               <Limits min="0" max="100" />
+            </StatusBar>
+            <Label name="$(parent)Label" font="ZoFontWinH1" color="ffffff" text="Magicka" verticalAlignment="CENTER" horizontalAlignment="LEFT"  alpha="0.85" hidden="false">			
+               <Dimensions x="0" y="0" />
+               <Anchor point="CENTER"  relativeTo="$(parent)StatusBar" relativePoint="CENTER" offsetX="0" offsetY="0"/>
+            </Label>
+         </Controls>
+      </TopLevelControl>
+
+      <TopLevelControl name="PlayerStaminaFrame" clampedToScreen="true" mouseEnabled="true" movable="true" hidden="false"> 
+         <Dimensions x="312" y="8" />
+         <Anchor point="TOPLEFT" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="1" offsetY="400"/>
+         <Controls>
+            <Backdrop name="$(parent)Backdrop" fitToSize="true" edgeColor="000000" layer="0" level="0" centerColor="000000" alpha="0.6"  hidden="false">
+               <Dimensions x="100%" y="100%" />
+               <Anchor point="TOPLEFT"  relativeTo="$(parent)" relativePoint="TOPLEFT"/>
+               <Edge edgeSize="1" />
+            </Backdrop>
+            <Backdrop name="$(parent)Border" fitToSize="true" edgeColor="000000" layer="0" level="2" centerColor="00000000" alpha="1"  hidden="false">
+               <Dimensions x="100%" y="100%" />
+               <Anchor point="TOPLEFT"  relativeTo="$(parent)" relativePoint="TOPLEFT"/>
+               <Edge edgeSize="1" />
+            </Backdrop>
+            <StatusBar name="$(parent)StatusBar" fitToSize="true" textureFile="dannicui/media/textures/Glass.dds" layer="0" level="1" color="22bf17" alpha="1" hidden="false">
+               <Dimensions x="100%" y="100%" />
+               <Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="0" offsetY="0"/> 
+               <Limits min="0" max="100" />
+            </StatusBar>
+            <Label name="$(parent)Label" font="ZoFontWinH1" fontsize="100" color="ffffff" text="Stamina" verticalAlignment="CENTER" horizontalAlignment="LEFT"  alpha="0.85" hidden="false">			
+               <Dimensions x="0" y="0" />
+               <Anchor point="CENTER"  relativeTo="$(parent)StatusBar" relativePoint="CENTER" offsetX="0" offsetY="0"/>
+            </Label>
+         </Controls>
+      </TopLevelControl>
+
+   </Controls>
+</GuiXml>
