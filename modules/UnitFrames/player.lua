@@ -17,13 +17,10 @@ function DannicUI.SetPlayerUnitFrame()
     GetControl("PlayerHealthFrameStatusBar"):SetColor(unpack(DannicUI.SavedVariables.PlayerHealthColor))
     GetControl("PlayerMagickaFrameStatusBar"):SetColor(unpack(DannicUI.SavedVariables.PlayerMagickaColor))
     GetControl("PlayerStaminaFrameStatusBar"):SetColor(unpack(DannicUI.SavedVariables.PlayerStaminaColor))
-
-
 end
 
+
 function DannicUI.UpdatePlayerFrames()
-    --local r = DannicUI.SavedVariables.PlayerStaminaColor{r}
-    --d(stamr)
 
     local PHC, PHM = GetUnitPower("player", POWERTYPE_HEALTH)
 	local PMC, PMM = GetUnitPower("player", POWERTYPE_MAGICKA)
