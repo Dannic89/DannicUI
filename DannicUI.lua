@@ -42,7 +42,6 @@ function DannicUI.UpdateFrames()
 end
 
 function DannicUI.ToggleZOFrames()
- --   ZO_PlayerAttributeHealth:SetHidden(true)
 	ZO_PlayerAttributeMagicka:SetHidden(true)
 	ZO_PlayerAttributeStamina:SetHidden(true)
 --  ZO_PlayerAttributeWerewolf:SetHidden(true)
