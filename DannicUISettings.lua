@@ -80,6 +80,16 @@ local optionsTable = {
                     default = 1036,
                 },
                 [6] = {
+                    type = "checkbox",
+                    name = "ZO Healthbar",
+                    tooltip = "Zenimax Healthbar Aktivieren",
+                    getFunc = function() return DannicUI.SavedVariables.ZO_PlayerAttributeHealth end,
+                    setFunc = function(value) DannicUI.SavedVariables.ZO_PlayerAttributeHealth = value;
+                        ZO_PlayerAttributeHealth:SetHidden(not value)
+                    end,
+                    width = "full",
+                },
+                [7] = {
                     type = "button",
                     name = "Default",
                     func = function() 

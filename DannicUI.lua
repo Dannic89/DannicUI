@@ -10,7 +10,6 @@ function DannicUI.OnAddOnLoaded(event, addonName)
     end
 end
 
-
 function DannicUI.Initialize()
     DannicUI.UpdatePlayerFrames()
     DannicUI.ToggleZOFrames()
@@ -30,12 +29,12 @@ function DannicUI.GetData(target)
         [4] = "Warden",
         [5] = "Necromancer",
         [6] = "Templar",
+        [7] = "Arcanist",
     }
     local targetClass = classNames[classId]
     
     return targetName, targetClass
 end
-
 
 function DannicUI.UpdateFrames()
     DannicUI.UpdatePlayerFrames()
@@ -43,7 +42,7 @@ function DannicUI.UpdateFrames()
 end
 
 function DannicUI.ToggleZOFrames()
-    ZO_PlayerAttributeHealth:SetHidden(true)
+ --   ZO_PlayerAttributeHealth:SetHidden(true)
 	ZO_PlayerAttributeMagicka:SetHidden(true)
 	ZO_PlayerAttributeStamina:SetHidden(true)
 --  ZO_PlayerAttributeWerewolf:SetHidden(true)
