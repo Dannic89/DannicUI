@@ -1,11 +1,11 @@
 <GuiXml> 
    <Controls>
       
-      <TopLevelControl name="PlayerHealthFrame" clampedToScreen="true" mouseEnabled="true" movable="true" hidden="false"> 
+      <TopLevelControl name="PlayerHealthFrame" clampedToScreen="true" mouseEnabled="true" movable="true" hidden="false" tier="0" layer="0" level="0"> 
          <Dimensions x="390" y="42" />
          <Anchor point="TOPLEFT" relativeTo="GuiRoot" relativePoint="TOPLEFT" offsetX="420" offsetY="1036"/>
          <Controls>
-            <Backdrop name="$(parent)Backdrop" edgeColor="000000" layer="0" level="0" centerColor="000000" alpha="0.6"  hidden="false">
+            <Backdrop name="$(parent)Backdrop" edgeColor="000000" layer="0" level="1" centerColor="000000" alpha="0.6"  hidden="false">
                <Dimensions x="100%" y="100%" />
                <Anchor point="TOPLEFT"  relativeTo="$(parent)" relativePoint="TOPLEFT"/>
                <Edge edgeSize="1" />
@@ -15,12 +15,12 @@
                <Anchor point="TOPLEFT"  relativeTo="$(parent)" relativePoint="TOPLEFT"/>
                <Edge edgeSize="1" />
             </Backdrop>
-            <StatusBar name="$(parent)StatusBar" textureFile="dannicui/media/textures/Glass.dds" layer="0" level="1" color="bf171d" alpha="1" hidden="false">
+            <StatusBar name="$(parent)StatusBar" textureFile="dannicui/media/textures/Glass.dds" layer="0" level="3" color="bf171d" alpha="1" hidden="false">
                <Dimensions x="100%" y="100%" />
                <Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="0" offsetY="0"/> 
                <Limits min="0" max="100" />
             </StatusBar>
-            <Texture name="$(parent)Icon" textureFile="" level="3">
+            <Texture name="$(parent)Icon" textureFile="" level="4">
                <Dimensions x="48" y="48" />
                <Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetX="-8" offsetY="12"/>
             </Texture>
