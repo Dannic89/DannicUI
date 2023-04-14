@@ -54,6 +54,7 @@ local optionsTable = {
                     setFunc = function(r,g,b,a) DannicUI.SavedVariables.PlayerHealthColor = {r,g,b,a}
                         PlayerHealthFrameStatusBar:SetColor(unpack(DannicUI.SavedVariables.PlayerHealthColor))
                     end,
+                    default = {0.8235294223 ,0.2784313858 , 0.2235294133 ,1},
                 },
                 [4] = {
                     type = "slider",
@@ -121,7 +122,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerMagickaWidth = value;
                         PlayerMagickaFrame:SetDimensions(DannicUI.SavedVariables.PlayerMagickaWidth, DannicUI.SavedVariables.PlayerMagickaHeight)
                     end,
-                    default = 311,
+                    default = 312,
                 },
                 [2] = {
                     type = "slider",
@@ -143,6 +144,7 @@ local optionsTable = {
                     setFunc = function(r,g,b,a) DannicUI.SavedVariables.PlayerMagickaColor = {r,g,b,a}
                         PlayerMagickaFrameStatusBar:SetColor(unpack(DannicUI.SavedVariables.PlayerMagickaColor))
                      end,
+                    default = {0.2509804070 ,0.3215686381, 1, 1},
                 },
                                 [4] = {
                     type = "slider",
@@ -154,7 +156,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerMagickaPosX = value;
                         GetControl("PlayerMagickaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerMagickaPosX, DannicUI.SavedVariables.PlayerMagickaPosY)
                     end,
-                    default = 420,
+                    default = -313,
                 },
                 [5] = {
                     type = "slider",
@@ -166,7 +168,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerMagickaPosY = value;
                         GetControl("PlayerMagickaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerMagickaPosX, DannicUI.SavedVariables.PlayerMagickaPosY)
                     end,
-                    default = 1036,
+                    default = 400,
                 },
                 [6] = {
                     type = "checkbox",
@@ -182,11 +184,11 @@ local optionsTable = {
                     type = "button",
                     name = "Default",
                     func = function() 
-                        DannicUI.SavedVariables.PlayerMagickaWidth = "311"
+                        DannicUI.SavedVariables.PlayerMagickaWidth = "312"
                         DannicUI.SavedVariables.PlayerMagickaHeight = "8"
                         DannicUI.SavedVariables.PlayerMagickaColor = {0.2509804070 ,0.3215686381, 1, 1}
-                        DannicUI.SavedVariables.PlayerMagickaPosX = "420"
-                        DannicUI.SavedVariables.PlayerMagickaPosY = "1036"
+                        DannicUI.SavedVariables.PlayerMagickaPosX = "-313"
+                        DannicUI.SavedVariables.PlayerMagickaPosY = "400"
                         GetControl("PlayerMagickaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerMagickaPosX, DannicUI.SavedVariables.PlayerMagickaPosY)
                         PlayerMagickaFrame:SetDimensions(DannicUI.SavedVariables.PlayerMagickaWidth, DannicUI.SavedVariables.PlayerMagickaHeight)
                         PlayerMagickaFrameStatusBar:SetColor(unpack(DannicUI.SavedVariables.PlayerMagickaColor))
@@ -209,7 +211,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerStaminaWidth = value;
                         PlayerStaminaFrame:SetDimensions(DannicUI.SavedVariables.PlayerStaminaWidth, DannicUI.SavedVariables.PlayerStaminaHeight)
                     end,
-                    default = 311,
+                    default = 312,
                 },
                 [2] = {
                     type = "slider",
@@ -231,6 +233,7 @@ local optionsTable = {
                     setFunc = function(r,g,b,a) DannicUI.SavedVariables.PlayerStaminaColor = {r,g,b,a}
                         PlayerStaminaFrameStatusBar:SetColor(unpack(DannicUI.SavedVariables.PlayerStaminaColor))
                      end,
+                    default = {0.4784313738 ,0.8235294223, 0.3176470697, 1},
                 },
                                 [4] = {
                     type = "slider",
@@ -242,7 +245,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerStaminaPosX = value;
                         GetControl("PlayerStaminaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerStaminaPosX, DannicUI.SavedVariables.PlayerStaminaPosY)
                     end,
-                    default = 420,
+                    default = 1,
                 },
                 [5] = {
                     type = "slider",
@@ -254,7 +257,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerStaminaPosY = value;
                         GetControl("PlayerStaminaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerStaminaPosX, DannicUI.SavedVariables.PlayerStaminaPosY)
                     end,
-                    default = 1036,
+                    default = 400,
                 },
                 [6] = {
                     type = "checkbox",
@@ -273,8 +276,8 @@ local optionsTable = {
                         DannicUI.SavedVariables.PlayerStaminaWidth = "311"
                         DannicUI.SavedVariables.PlayerStaminaHeight = "8"
                         DannicUI.SavedVariables.PlayerStaminaColor = {0.4784313738 ,0.8235294223, 0.3176470697, 1}
-                        DannicUI.SavedVariables.PlayerStaminaPosX = "420"
-                        DannicUI.SavedVariables.PlayerStaminaPosY = "1036"
+                        DannicUI.SavedVariables.PlayerStaminaPosX = "1"
+                        DannicUI.SavedVariables.PlayerStaminaPosY = "400"
                         GetControl("PlayerStaminaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerStaminaPosX, DannicUI.SavedVariables.PlayerStaminaPosY)
                         PlayerStaminaFrame:SetDimensions(DannicUI.SavedVariables.PlayerStaminaWidth, DannicUI.SavedVariables.PlayerStaminaHeight)
                         PlayerStaminaFrameStatusBar:SetColor(unpack(DannicUI.SavedVariables.PlayerStaminaColor))
