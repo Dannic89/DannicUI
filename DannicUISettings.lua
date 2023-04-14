@@ -144,14 +144,50 @@ local optionsTable = {
                         PlayerMagickaFrameStatusBar:SetColor(unpack(DannicUI.SavedVariables.PlayerMagickaColor))
                      end,
                 },
-                [4] = {
+                                [4] = {
+                    type = "slider",
+                    name = "Position X",
+                    tooltip = "Setzt die Position auf der X-Achse fest",
+                    min = 0,
+                    max = 2000,
+                    getFunc = function() return DannicUI.SavedVariables.PlayerMagickaPosX end,
+                    setFunc = function(value) DannicUI.SavedVariables.PlayerMagickaPosX = value;
+                        GetControl("PlayerMagickaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerMagickaPosX, DannicUI.SavedVariables.PlayerMagickaPosY)
+                    end,
+                    default = 420,
+                },
+                [5] = {
+                    type = "slider",
+                    name = "Position Y",
+                    tooltip = "Setzt die Position auf der Y-Achse fest",
+                    min = 0,
+                    max = 2000,
+                    getFunc = function() return DannicUI.SavedVariables.PlayerMagickaPosY end,
+                    setFunc = function(value) DannicUI.SavedVariables.PlayerMagickaPosY = value;
+                        GetControl("PlayerMagickaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerMagickaPosX, DannicUI.SavedVariables.PlayerMagickaPosY)
+                    end,
+                    default = 1036,
+                },
+                [6] = {
+                    type = "checkbox",
+                    name = "ZO Magickabar",
+                    tooltip = "Zenimax Healthbar Aktivieren",
+                    getFunc = function() return DannicUI.SavedVariables.ZO_PlayerAttributeMagicka end,
+                    setFunc = function(value) DannicUI.SavedVariables.ZO_PlayerAttributeMagicka = value;
+                        ZO_PlayerAttributeMagicka:SetHidden(not value)
+                    end,
+                    width = "full",
+                },
+                [7] = {
                     type = "button",
                     name = "Default",
                     func = function() 
                         DannicUI.SavedVariables.PlayerMagickaWidth = "311"
                         DannicUI.SavedVariables.PlayerMagickaHeight = "8"
                         DannicUI.SavedVariables.PlayerMagickaColor = {0.2509804070 ,0.3215686381, 1, 1}
-                       
+                        DannicUI.SavedVariables.PlayerMagickaPosX = "420"
+                        DannicUI.SavedVariables.PlayerMagickaPosY = "1036"
+                        GetControl("PlayerMagickaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerMagickaPosX, DannicUI.SavedVariables.PlayerMagickaPosY)
                         PlayerMagickaFrame:SetDimensions(DannicUI.SavedVariables.PlayerMagickaWidth, DannicUI.SavedVariables.PlayerMagickaHeight)
                         PlayerMagickaFrameStatusBar:SetColor(unpack(DannicUI.SavedVariables.PlayerMagickaColor))
                     end,
@@ -196,14 +232,50 @@ local optionsTable = {
                         PlayerStaminaFrameStatusBar:SetColor(unpack(DannicUI.SavedVariables.PlayerStaminaColor))
                      end,
                 },
-                [4] = {
+                                [4] = {
+                    type = "slider",
+                    name = "Position X",
+                    tooltip = "Setzt die Position auf der X-Achse fest",
+                    min = 0,
+                    max = 2000,
+                    getFunc = function() return DannicUI.SavedVariables.PlayerStaminaPosX end,
+                    setFunc = function(value) DannicUI.SavedVariables.PlayerStaminaPosX = value;
+                        GetControl("PlayerStaminaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerStaminaPosX, DannicUI.SavedVariables.PlayerStaminaPosY)
+                    end,
+                    default = 420,
+                },
+                [5] = {
+                    type = "slider",
+                    name = "Position Y",
+                    tooltip = "Setzt die Position auf der Y-Achse fest",
+                    min = 0,
+                    max = 2000,
+                    getFunc = function() return DannicUI.SavedVariables.PlayerStaminaPosY end,
+                    setFunc = function(value) DannicUI.SavedVariables.PlayerStaminaPosY = value;
+                        GetControl("PlayerStaminaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerStaminaPosX, DannicUI.SavedVariables.PlayerStaminaPosY)
+                    end,
+                    default = 1036,
+                },
+                [6] = {
+                    type = "checkbox",
+                    name = "ZO Staminabar",
+                    tooltip = "Zenimax Healthbar Aktivieren",
+                    getFunc = function() return DannicUI.SavedVariables.ZO_PlayerAttributeStamina end,
+                    setFunc = function(value) DannicUI.SavedVariables.ZO_PlayerAttributeStamina = value;
+                        ZO_PlayerAttributeStamina:SetHidden(not value)
+                    end,
+                    width = "full",
+                },
+                [7] = {
                     type = "button",
                     name = "Default",
                     func = function() 
                         DannicUI.SavedVariables.PlayerStaminaWidth = "311"
                         DannicUI.SavedVariables.PlayerStaminaHeight = "8"
                         DannicUI.SavedVariables.PlayerStaminaColor = {0.4784313738 ,0.8235294223, 0.3176470697, 1}
-                       
+                        DannicUI.SavedVariables.PlayerStaminaPosX = "420"
+                        DannicUI.SavedVariables.PlayerStaminaPosY = "1036"
+                        GetControl("PlayerStaminaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerStaminaPosX, DannicUI.SavedVariables.PlayerStaminaPosY)
                         PlayerStaminaFrame:SetDimensions(DannicUI.SavedVariables.PlayerStaminaWidth, DannicUI.SavedVariables.PlayerStaminaHeight)
                         PlayerStaminaFrameStatusBar:SetColor(unpack(DannicUI.SavedVariables.PlayerStaminaColor))
                     end,
