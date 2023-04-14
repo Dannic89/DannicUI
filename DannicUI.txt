@@ -16,3 +16,4 @@ modules/UnitFrames/player.lua
 modules/UnitFrames/player.xml
 modules/UnitFrames/target.lua
 modules/UnitFrames/target.xml
+modules/UnitFrames/actionbar.lua
