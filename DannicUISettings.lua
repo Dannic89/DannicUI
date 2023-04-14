@@ -32,6 +32,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerHealthWidth = value;
                         PlayerHealthFrame:SetDimensions(DannicUI.SavedVariables.PlayerHealthWidth, DannicUI.SavedVariables.PlayerHealthHeight)
                     end,
+                    width = "half",
                     default = 390,
                 },
                 [2] = {
@@ -44,6 +45,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerHealthHeight = value;
                         PlayerHealthFrame:SetDimensions(DannicUI.SavedVariables.PlayerHealthWidth, DannicUI.SavedVariables.PlayerHealthHeight)
                     end,
+                    width = "half",
                     default = 42,
                 },
                 [3] = {
@@ -54,6 +56,7 @@ local optionsTable = {
                     setFunc = function(r,g,b,a) DannicUI.SavedVariables.PlayerHealthColor = {r,g,b,a}
                         PlayerHealthFrameStatusBar:SetColor(unpack(DannicUI.SavedVariables.PlayerHealthColor))
                     end,
+                    width = "full",
                     default = {0.8235294223 ,0.2784313858 , 0.2235294133 ,1},
                 },
                 [4] = {
@@ -66,6 +69,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerHealthPosX = value;
                         GetControl("PlayerHealthFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerHealthPosX, DannicUI.SavedVariables.PlayerHealthPosY)
                     end,
+                    width = "half",
                     default = 420,
                 },
                 [5] = {
@@ -78,6 +82,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerHealthPosY = value;
                         GetControl("PlayerHealthFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerHealthPosX, DannicUI.SavedVariables.PlayerHealthPosY)
                     end,
+                    width = "half",
                     default = 1036,
                 },
                 [6] = {
@@ -122,6 +127,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerMagickaWidth = value;
                         PlayerMagickaFrame:SetDimensions(DannicUI.SavedVariables.PlayerMagickaWidth, DannicUI.SavedVariables.PlayerMagickaHeight)
                     end,
+                    width = "half",
                     default = 312,
                 },
                 [2] = {
@@ -134,6 +140,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerMagickaHeight = value;
                         PlayerMagickaFrame:SetDimensions(DannicUI.SavedVariables.PlayerMagickaWidth, DannicUI.SavedVariables.PlayerMagickaHeight)
                     end,
+                    width = "half",
                     default = 8,
                 },
                 [3] = {
@@ -144,6 +151,7 @@ local optionsTable = {
                     setFunc = function(r,g,b,a) DannicUI.SavedVariables.PlayerMagickaColor = {r,g,b,a}
                         PlayerMagickaFrameStatusBar:SetColor(unpack(DannicUI.SavedVariables.PlayerMagickaColor))
                      end,
+                    width = "full",
                     default = {0.2509804070 ,0.3215686381, 1, 1},
                 },
                                 [4] = {
@@ -156,6 +164,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerMagickaPosX = value;
                         GetControl("PlayerMagickaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerMagickaPosX, DannicUI.SavedVariables.PlayerMagickaPosY)
                     end,
+                    width = "half",
                     default = -313,
                 },
                 [5] = {
@@ -168,6 +177,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerMagickaPosY = value;
                         GetControl("PlayerMagickaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerMagickaPosX, DannicUI.SavedVariables.PlayerMagickaPosY)
                     end,
+                    width = "half",
                     default = 400,
                 },
                 [6] = {
@@ -211,6 +221,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerStaminaWidth = value;
                         PlayerStaminaFrame:SetDimensions(DannicUI.SavedVariables.PlayerStaminaWidth, DannicUI.SavedVariables.PlayerStaminaHeight)
                     end,
+                    width = "half",
                     default = 312,
                 },
                 [2] = {
@@ -223,6 +234,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerStaminaHeight = value;
                         PlayerStaminaFrame:SetDimensions(DannicUI.SavedVariables.PlayerStaminaWidth, DannicUI.SavedVariables.PlayerStaminaHeight)
                     end,
+                    width = "half",
                     default = 8,
                 },
                 [3] = {
@@ -233,6 +245,7 @@ local optionsTable = {
                     setFunc = function(r,g,b,a) DannicUI.SavedVariables.PlayerStaminaColor = {r,g,b,a}
                         PlayerStaminaFrameStatusBar:SetColor(unpack(DannicUI.SavedVariables.PlayerStaminaColor))
                      end,
+                    width = "full",
                     default = {0.4784313738 ,0.8235294223, 0.3176470697, 1},
                 },
                                 [4] = {
@@ -245,6 +258,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerStaminaPosX = value;
                         GetControl("PlayerStaminaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerStaminaPosX, DannicUI.SavedVariables.PlayerStaminaPosY)
                     end,
+                    width = "half",
                     default = 1,
                 },
                 [5] = {
@@ -257,6 +271,7 @@ local optionsTable = {
                     setFunc = function(value) DannicUI.SavedVariables.PlayerStaminaPosY = value;
                         GetControl("PlayerStaminaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerStaminaPosX, DannicUI.SavedVariables.PlayerStaminaPosY)
                     end,
+                    width = "half",
                     default = 400,
                 },
                 [6] = {
