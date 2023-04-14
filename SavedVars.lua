@@ -38,6 +38,17 @@ function DannicUI.DefaultSavedVariables()
             DannicUI.SavedVariables.PlayerMagickaColor = { 0, 0, 1, 1 }
         end
         GetControl("PlayerMagickaFrameStatusBar"):SetColor(unpack(DannicUI.SavedVariables.PlayerMagickaColor))
+        if (DannicUI.SavedVariables.PlayerMagickaPosX == nil) then
+            DannicUI.SavedVariables.PlayerMagickaPosX = -313
+        end
+        if (DannicUI.SavedVariables.PlayerMagickaPosY == nil) then
+            DannicUI.SavedVariables.PlayerMagickaPosY = 400
+        end
+        GetControl("PlayerMagickaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerMagickaPosX, DannicUI.SavedVariables.PlayerMagickaPosY)
+        if (DannicUI.SavedVariables.ZO_PlayerAttributeMagicka == nil) then
+            DannicUI.SavedVariables.ZO_PlayerAttributeMagicka = false
+        end
+        ZO_PlayerAttributeMagicka:SetHidden(not DannicUI.SavedVariables.ZO_PlayerAttributeMagicka)
     -- Player Magicka Frame End
  
     -- Player Stamina Frame Start
@@ -52,4 +63,15 @@ function DannicUI.DefaultSavedVariables()
             DannicUI.SavedVariables.PlayerStaminaColor = { 0, 1, 0, 1 }
         end
         GetControl("PlayerStaminaFrameStatusBar"):SetColor(unpack(DannicUI.SavedVariables.PlayerStaminaColor))
+        if (DannicUI.SavedVariables.PlayerStaminaPosX == nil) then
+            DannicUI.SavedVariables.PlayerStaminaPosX = 1
+        end
+        if (DannicUI.SavedVariables.PlayerStaminaPosY == nil) then
+            DannicUI.SavedVariables.PlayerStaminaPosY = 400
+        end
+        GetControl("PlayerStaminaFrame"):SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, DannicUI.SavedVariables.PlayerStaminaPosX, DannicUI.SavedVariables.PlayerStaminaPosY)
+        if (DannicUI.SavedVariables.ZO_PlayerAttributeStamina == nil) then
+            DannicUI.SavedVariables.ZO_PlayerAttributeStamina = false
+        end
+        ZO_PlayerAttributeStamina:SetHidden(not DannicUI.SavedVariables.ZO_PlayerAttributeStamina)
 end
