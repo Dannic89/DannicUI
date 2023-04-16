@@ -1,5 +1,3 @@
-local DannicUI.Actionbar = {}
-
 function DannicUI.Actionbar.ShowInactiveWeaponBar()
   for i = 1, ACTION_BAR_SIZE do
     local button = ZO_ActionBar_GetButton(i)
